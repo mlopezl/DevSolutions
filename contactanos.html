@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSolutions - Servicios</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./contactanos.css">
+</head>
+<body>
+
+    <ul id="desktop-menu" class="desktop__menu hidden">
+        <i id="close-icon" class="bi bi-x" aria-label="Cerrar menú" role="button"></i>
+
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#about">¿Quiénes Somos?</a></li>
+        <li><a href="./servicios.html">Servicios</a></li>
+        <li><a href="./contactanos.html" aria-current="page">Contáctanos</a></li>
+    </ul>
+
+    <header class="header">
+        <nav class="nav">
+            <h1>DevSolutions</h1>
+            <i id="menu-icon" class="bi bi-list" aria-label="Abrir menú" role="button"></i>
+        </nav>
+    </header>
+
+   <form
+    class="contactanos"
+    action="https://formsubmit.co/maynor94l39@gmail.com"
+    method="POST"
+>
+
+    <h2>Contáctanos</h2>
+
+    <!-- Configuración FormSubmit -->
+    <input
+        type="hidden"
+        name="_subject"
+        value="Nuevo contacto desde DevSolutions"
+    >
+
+    <input
+        type="hidden"
+        name="_captcha"
+        value="false"
+    >
+
+    <!-- Cambia la URL por la de tu sitio cuando lo publiques -->
+    <!--
+    <input
+        type="hidden"
+        name="_next"
+        value="https://tusitio.com/gracias.html"
+    >
+    -->
+
+    <label for="nombre">Nombre</label>
+    <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Nombre"
+        autocomplete="name"
+        required
+    >
+
+    <label for="correo">Correo electrónico</label>
+    <input
+        type="email"
+        id="correo"
+        name="correo"
+        placeholder="Correo"
+        autocomplete="email"
+        required
+    >
+
+    <label for="servicio">Servicio de interés</label>
+    <select
+        name="servicio"
+        id="servicio"
+        required
+    >
+        <option value="" disabled selected>
+            ¿Qué servicio te interesa?
+        </option>
+        <option value="Diseño">Diseño</option>
+        <option value="Desarrollo">Desarrollo</option>
+        <option value="Despliegue">Despliegue</option>
+    </select>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea
+        name="mensaje"
+        id="mensaje"
+        placeholder="Escribe un mensaje"
+        rows="5"
+        required
+    ></textarea>
+
+    <button type="submit">
+        Enviar
+    </button>
+
+</form>
+    <script src="./app.js"></script>
+</body>
+</html>

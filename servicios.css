@@ -1,0 +1,22 @@
+.servicios{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #c2c2c2;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.servicios img{
+    width: 100%;
+}
+
+.servicios article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
